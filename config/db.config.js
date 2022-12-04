@@ -21,5 +21,5 @@ module.exports = {
         idle: 10000 //tiempo máximo, en milisegundos, que una conexión puede estar inactiva antes de ser liberada
     }*/
     
-    URI:'postgresql://postgres:FnCGa4a8UNnWgQsqdYp6@containers-us-west-121.railway.app:6399/railway'
+    URI:'//postgres:FnCGa4a8UNnWgQsqdYp6@containers-us-west-121.railway.app:6399/railway'
 };
