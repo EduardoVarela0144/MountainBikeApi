@@ -1,12 +1,16 @@
+const DB_HOST = process.env.DB_HOST || 'localhost';
+const DB_USER = process.env.DB_USER || 'administrador';
+const DB_PASSWORD = process.env.DB_PASSWORD || 'administrador';
+const DB_NAME = process.env.DB_NAME || 'db_mtb_administracion';
 
 
 module.exports = {
     
     //Local
-    HOST: process.env.DB_HOST || 'localhost',
-    USER: process.env.DB_USER || 'administrador',
-    PASSWORD:process.env.DB_PASSWORD || 'administrador',
-    DB: process.env.DB_NAME || 'db_mtb_administracion',
+    HOST: DB_HOST ,
+    USER: DB_USER  ,
+    PASSWORD:DB_PASSWORD  ,
+    DB: DB_NAME  ,
     dialect: "postgres",
     pool: {
         max: 5,
