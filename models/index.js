@@ -15,7 +15,7 @@ const Sequelize = require("sequelize");
     }
 });*/
 
-const sequelize = new Sequelize(dbConfig.DB_URI, {
+const sequelize = new Sequelize(dbConfig.URI, {
     define: {
         timestamps: false
       }  
