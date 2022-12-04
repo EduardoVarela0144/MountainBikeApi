@@ -2,7 +2,7 @@ const dbConfig = require("../config/db.config.js");
 
 const Sequelize = require("sequelize");
 //local
-const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
+/*const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
     host: dbConfig.HOST,
     dialect: dbConfig.dialect,
     operatorsAliases: false,
@@ -13,6 +13,12 @@ const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
         acquire: dbConfig.pool.acquire,
         idle: dbConfig.pool.idle
     }
+});*/
+
+const sequelize = new Sequelize(dbConfig.DB_URI, {
+    define: {
+        timestamps: false
+      }  
 });
 
 const db = {};
