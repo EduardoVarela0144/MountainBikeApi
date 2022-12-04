@@ -7,10 +7,10 @@ const DB_NAME = process.env.DB_NAME || 'db_mtb_administracion';
 module.exports = {
     
     //Local
-    HOST: DB_HOST ,
-    USER: DB_USER  ,
-    PASSWORD:DB_PASSWORD  ,
-    DB: DB_NAME  ,
+    HOST: 'containers-us-west-121.railway.app' ,
+    USER: 'postgres',
+    PASSWORD:'FnCGa4a8UNnWgQsqdYp6',
+    DB: 'railway',
     dialect: "postgres",
     pool: {
         max: 5,
