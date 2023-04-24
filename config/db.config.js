@@ -4,7 +4,7 @@ const DB_PASSWORD = process.env.DB_PASSWORD || 'administrador';
 const DB_NAME = process.env.DB_NAME || 'db_mtb_administracion';
 const DB_URI = process.env.DB_URI ;
 
-
+// esta es una prueba
 module.exports = {
     
     //Local
